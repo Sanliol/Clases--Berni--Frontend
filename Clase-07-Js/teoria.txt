@@ -1,0 +1,13 @@
+Javascript
+
+Lenguaje de programacion INTERPRETADO: no necesita de ningun otro intermediario para que se ejecute 
+(como Java que necesita un compilador/traducido a un lenguaje de maquina para que pueda funcionar en cualquier sistemas operativo)
+Por ejemplo Typescript tambien se debe traducir. El browser solo entiende JS,CSS y HTML(No entiende ningun lenguaje de backend ni type, ni java,etc)
+
+Para qué sirve ver en la consola? Para chequear valores. Ver funcionamiento.
+Objetivo de JS: Funcionalidad, eventos, captura de datos.
+-Javascript es case sensitive
+- Funciona hasta que encuentra un error y se detiene ahi. Es decir, que si tenemos codigo hasta la linea 100 pero en la linea 50 detecta un error, no sigue leyendo.
+
+/* */: comentario multiples lineas
+//: comentario una linea sola

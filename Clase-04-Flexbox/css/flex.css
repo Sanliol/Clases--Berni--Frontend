@@ -1,0 +1,53 @@
+
+body{
+    background: rgb(220, 220, 238); /* Diferencia entre background y background color: el primero puede traer una url de afuera, y poner una imagen por ej. */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Flex: es responsivo */
+
+.contenedorPadre{
+    display: flex; /* aca me flexea el div(que es en bloque) y me lo pone en fila */    
+    flex-direction: column; /* me flexea a columna, como estaba originalmente */
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: row;/* flex direction: fila. Como ya estaba en fila se mantiene asi */
+    flex-wrap: wrap-reverse; /* salta de linea y me invierte las lineas */
+    flex-wrap: nowrap;/* no salta de linea cuando el dispositivo cambia(le quita lo responsive) */
+    flex-wrap: wrap;/* salta de linea cuando el dispositivo es pequeño */
+    justify-content: flex-start; /* Inicia los elementos en el left.seria lo mismo que flexdirection row. No cambia nada porque ya esta asi por default cuando puse flexbox */
+    justify-content: flex-end; /* tira mis elementos al rigth, los tira a la derecha */
+    justify-content: center;/* ubica los elementos en el centro */
+    justify-content: space-around;/* separa los elementos automaticamente(cumple la funcion del margin)*/
+    justify-content: space-between;/* Idem al anterior pero este deja menos margin a la derecha y la izuiqerda de mi screen. Osea box1, box12 se pegan mas a la izq, y a la derecha. Pegado a los margenes*/
+    justify-content: space-evenly; /* Idem al anterior pero en vez de pegarlos al margen los separa */
+    align-content: end; /* alineamos los contenidos al final(abajo: en el bottom del contenedor) */
+    align-content: center;
+    align-content: flex-end; /* IDEM a end */
+    align-content: flex-start;/* ordena los elementos arriba en el contenedor. IDEM a Flex direction row */
+    /* align-items: end; /* Lo mismo que end, SALVO que este los tira abajo y contra el margen derecho */
+    /* align-items: center; *//* align items funciona sin el align-content y sin el justify */ /* */ 
+    padding: 20px;
+    background-color: blue;
+    height: 600px;
+
+}
+
+.contenedorPadre div{ /* apuntame a los divs hijos */
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    /* margin: 15px; */
+}
+
+
+
+
+

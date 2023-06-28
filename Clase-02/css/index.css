@@ -1,0 +1,123 @@
+*{ /* Con esto tengo absoluto control de todos los estilos. Es como darle un reseteo al css. Le quito el default al browser. 
+        Es como arrancar la pagina sin estilos asi puedo personalizar mas facil */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+}
+body{
+        background: #a9c1ed;
+        
+}
+
+/* reglas de MediaQuery: Breakpoints: punto de quiebre en mi sitio web. Puedo darle otra interfaz a mi sitio hasta los 600px.*/
+
+/* @media screen and (max-width: 600px)   { /* pantalla max 600px.  */
+/*    body{
+                background: yellow; /* Muestra background yellow hasta 600px. */
+/*                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+        }
+        h1{
+                color: blue;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */       
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+        body{
+                background-color: yellow;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+        }
+        h1{
+                color: blue;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */
+
+        }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        body{
+                background: rgb(255, 0, 0); /* Muestra background yellow hasta 600px. */
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+        }
+        h1{
+                color: black;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */
+
+        }
+} 
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+        body{
+                background: green; /* Muestra background yellow hasta 600px. */
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+        }
+        h1{
+                color: blue;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */
+
+        }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+        body{
+                background: violet; /* Muestra background yellow hasta 600px. */
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+        }
+        h1{
+                color: blanchedalmond;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */
+
+        }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+        body{
+                background: black; /* Muestra background yellow hasta 600px. */
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+                color: white;
+        }
+        h1{
+                color: blue;
+        }
+
+        p{
+                line-height: 2.5px;/* interlineado */
+
+        }
+}
+
+
+
+
+
+

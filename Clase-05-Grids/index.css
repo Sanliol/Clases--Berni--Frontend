@@ -1,0 +1,73 @@
+.padre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Fr=fraccion, cada columna ocupara una fraccion */
+    grid-template-rows: 550px 250px 150px;
+    grid-column-gap: 25px;/* separacion entre columnas */ 
+    row-gap: 25px; /*actualizacion de grid-row-gap*/
+
+}
+.padre div{
+    width: 30px;
+    height: 30px;
+    width: 100%;/* el div ocupa el 100porciento de la columna */
+    height: 100%;
+}
+
+.flexbox div{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    margin: 5px;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.hijo1{
+    background-color: #ec9393;
+}
+
+.hijo2{
+    background-color: #93ec9c;
+}
+
+.hijo3{
+    background-color: blue;
+}
+
+.centrar {
+    text-align: center;
+}
+.hijo4{
+    background-color: #463c3c;
+    /* Idem a grid areas lo de abajo */
+    grid-column: 2 / 4;/* que arranque en la linea 2 y termine en la 4 */
+    grid-row: 1 / 3;
+    grid-row: 1; /* la fila que quiero ocupar */ 
+}
+
+.hijo5{
+    background-color: #ab93ec;
+}
+
+.hijo6{
+    background-color: #e80606;
+}
+
+.hijo7{
+    background-color: #7ff0f6;
+}
+
+.hijo8{
+    background-color: #14699d;
+}
+
+.hijo9{
+    background-color: #f8fb53;
+}
+
+

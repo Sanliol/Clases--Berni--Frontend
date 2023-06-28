@@ -1,0 +1,11 @@
+-Live share (extension para compartir y trabajar en equipo)
+-Sincronizo mi VSC con github
+-Toco en live share
+-Aprieto boton share
+-Crea un link de invitacion
+
+
+
+
+
+

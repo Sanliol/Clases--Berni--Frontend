@@ -1,0 +1,30 @@
+Cuando iniciamos un proyecto, tenemos 3 formas de guardarlo:
+-En un disco externo
+-En un drive
+-Github: nos crea un repositorio local (en nuestro disco, dentro de nuestra computadora). Es un drive de codigo. 
+IMPORTANTE: PARA PASAR LINK DE NUESTRA PAGINA CREADA, IR A NUESTRO REPOSITORIO:CONFIGURACION:PAGES:Y CAMBIAR EL BRUNCH A MAIN O MASTER: GUARDAR.
+(Esto nos crea un link para compartir a quien querramos o verificar por ejemplo responsive design desde el celu. 
+
+ Git init: Inicia/crea un repositorio vacio dentro de la carpeta/directorio que seleccionemos en nuestro editor. 
+Luego git va a utilizar esta carpeta creada para mandarla a github
+ Si yo por ej. tengo en el contenedor o carpeta padre (PWITT) varias carpetas: claseuno, clasedos,clase3, claseN.
+e inicializo un repositorio en la carpeta de clasedos, git solamente le hara un seguimiento a la carpeta de clasedos.
+Esto hara que si pasa algo perderé la informacion que hay en las otras carpetas porque solo inicialize un repositorio
+en la carpeta clasedos. Para hacerle un seguimiento a todas las clases, debo inicializar un repositorio (git init) en la
+carpeta o contenedor "padre"(PWITT). 
+Otra cosa a tener en cuenta es que si carpeta de claseuno está siendo seguida(es decir tiene un repositorio), cada archivo o nueva carpeta que creemos dentro de esta,
+pasará automaticamente a ser seguido por git. (pero con la U de untrucked)
+
+comando cd (change directory): con este comando voy seleccionando los comandos donde quiero guardar. Es como hacer un doble click en una carpeta.
+cd..     (cd con dos puntitos me va retrocediendo las carpetas)  ejemplo: DiscoC>Archivosderograma>usuario   cd..    DiscoC>Archivosdeprograma    cd..    DiscoC
+CONCLUSION: TENER EN CUENTA SIEMPRE DONDE HAREMOS git init. 
+
+.gitignore (archivo): creo un archivo donde dentro le voy a decir a git los archivos que NO quiero que me siga por mas que esten dentro de la carpeta seguida.
+Si tengo varios archivos .txt (por ej) y no quiero que los siga escribo, dentro de mi archivo .gitignore, un asterisco y txt: *.txt. El asterisco significa "todos".
+Es decir le dice que deje de seguir a TODOS los archivos .TXT Si quiero agregar una carpeta a git ignore debo anteponer una barra:
+/folder_x
+
+git add . (seguimiento de todos los archivos del directorio seleccionado)
+git add index.html (seguimiento de un archivo especifico dentro de mi directorio)
+git add css/index.css (seguimiento especifico de un archivo que se encuentra dentro de una carpeta en particular de mi directorio indicado)
+

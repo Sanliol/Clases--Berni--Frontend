@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlazamos un archivo de estilos externo a nuestro index.html -->
+    <link rel="stylesheet" href="./css/index.css"><!-- atributo rel: la relacion que tiene mi index.html con el archivo linkeado es una hoja de estilos -->
+    <title>Clase 02</title>
+</head>
+<body>
+    <nav>
+        <a href="./pages/productos.html">Redireccion a productos</a>
+        <hr> 
+        <a href="./pages/sucursales.html">Redireccion a sucursales</a>
+    </nav>
+
+    
+    <main>
+        <h1>
+            Proyecto 02/ Listas / Formularios / Tablas 
+        </h1>
+        <br>
+            <img src="https://acortar.link/MOu0Iz" alt="Algun paraiso">
+        <br>
+        <!-- Lista en Html -->
+        <!-- lista desordenada -->
+        <hr>
+        <h2>Ruta Absoluta 
+            <ul>
+                <li> <!-- enlace a ruta absoluta -->
+                    <a href="https://sceu.frba.utn.edu.ar/tecnicaturas-licenciaturas/" target="_blank">UTN BA</a> <!-- target blank es para que el enlace absoluto me 
+                                                                                                                        lo abra en otra pestaña, 
+                                                                                                                 de este modo el usuario no pierde nuestra pagina. -->
+                </li>
+            </ul>
+        </h2>
+        <hr>
+        <h2>
+            Listas
+        </h2>
+        <h3>Lista desordenada</h3>
+        <ul> <!--etiqueta de lista "desordenada". Contenedor "padre" -->
+            <li>Cafe</li> <!--item list: contenedor hijo -->
+            <li>Azucar</li>
+            <li>Queso</li>
+        </ul>
+        <hr>
+
+
+        <!-- listas ordenadas -->
+        <h3>Lista ordenada</h3>
+        <ol> <!-- contenedor padre -->
+            <li>lavar auto</li> <!-- contenedor hijo -->
+            <li>pasear</li>
+            <li>cargar combustible</li>
+        </ol>
+
+        <hr>
+        <h3>Lista descripcion</h3>
+
+        <dl>
+            <dt>Argentina</dt>
+            <dd><!-- etiqueta descripcion -->
+                Argentina es un pais de aproximadamente 50 millones de habitantes Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto 
+                deleniti harum nesciunt. Excepturi, beatae corporis facilis laboriosam obcaecati, 
+                laborum, culpa ex tenetur suscipit debitis quis mollitia quaerat repellat iste accusantium.
+            </dd>
+            <dt>Brasil</dt>
+            <dd>
+                Brasil tiene aproximadamente 700 millones de habitantes.. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Numquam enim quos suscipit natus nulla quis tempora, 
+                iusto voluptates excepturi quasi, quidem totam inventore consectetur aliquid. Exercitationem 
+                dolorem inventore repellat voluptas?
+            </dd>
+        </dl>
+        <dl>
+            <dt>Argentina</dt>
+            <dd><!-- etiqueta descripcion -->
+                Argentina es un pais de aproximadamente 50 millones de habitantes Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto 
+                deleniti harum nesciunt. Excepturi, beatae corporis facilis laboriosam obcaecati, 
+                laborum, culpa ex tenetur suscipit debitis quis mollitia quaerat repellat iste accusantium.
+            </dd>
+            <dt>Brasil</dt>
+            <dd>
+                Brasil tiene aproximadamente 700 millones de habitantes.. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Numquam enim quos suscipit natus nulla quis tempora, 
+                iusto voluptates excepturi quasi, quidem totam inventore consectetur aliquid. Exercitationem 
+                dolorem inventore repellat voluptas?
+            </dd>
+        </dl>
+        <dl>
+            <dt>Argentina</dt>
+            <dd><!-- etiqueta descripcion -->
+                Argentina es un pais de aproximadamente 50 millones de habitantes Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto 
+                deleniti harum nesciunt. Excepturi, beatae corporis facilis laboriosam obcaecati, 
+                laborum, culpa ex tenetur suscipit debitis quis mollitia quaerat repellat iste accusantium.
+            </dd>
+            <dt>Brasil</dt>
+            <dd>
+                Brasil tiene aproximadamente 700 millones de habitantes.. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Numquam enim quos suscipit natus nulla quis tempora, 
+                iusto voluptates excepturi quasi, quidem totam inventore consectetur aliquid. Exercitationem 
+                dolorem inventore repellat voluptas?
+            </dd>
+        </dl>
+        <hr>
+        <h2>
+            Formularios
+        </h2>
+        <!-- form action="/datos" method="post". Estos atributos irian, pero para que no salte error al probarlo, lo dejamos nomas como form a continuacion, sin ningun atributo -->
+        <!-- id: ruta o enlace interno. Es un identificador unico -->
+        <form id="formulario" > <!-- el atributo action le dice al formulario a donde debe enviarlo. 
+                        El atributo method dice como va a enviar esa informacion que obtiene el formulario. Hay dos, post and get. 
+                        Uno visible, el otro no. (Pero esto lo veremos en backend)
+                        Un formulario siempre debe tener la etiqueta button. ACTION: A DONDE VA. METHOD: COMO VA LA INFO -->
+                    <label for="Nombre">Nombre</label><!-- elementos de formulario: el label es el texto que le mostramos al usuario en el input
+                                            referido a que datos debe cargar. -->
+                    <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre aquí" required> <!-- Existe otro input de tipo numerico. El input es el unico lugar donde le damos la posibilidad al usuario
+                                        de introducir info. El atributo placeholder sirve para decirle que hacer al usuario, es como una minima
+                                        ayuda que aparece mas opaco.Required sirve para que el dato sea obligatorio. -->
+                    <br> <!-- salto de linea -->                   
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="apellido" minlength="4" maxlength="30"> <!-- Minimo longitud minlength: como minomo 8 de longitud. Minimo 8 caracteres.
+                                                                         -->
+                    <br>                                                    
+                    <label for="Email">E-mail</label>
+                    <input type="email" name="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" autofocus >   
+                                                                                           <!-- Atributo type de tipo email me esta diciendo que lleva @
+                                                                                    El autofocus para advertir al usuario(lleva el cursor en el formulario) -->   
+                    <br>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" min="10" max="100">
+                    <br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" min="1950-01-01" max="2023-06-03" class="input formularios"><!-- de tipo date es de tipo fecha -->
+                    <br>
+                    <label for="password">Pasword</label>
+                    <input type="password" id="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" disabled > <!-- Como es de tipo password cuando el cliente escriba la contraseña, no lo verá -->
+                    <br>
+                    <label for="password">Repita el password: </label>
+                    <input type="password" id="otroPassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" disabled>
+                    <br>
+                    <label for="provincia">Provincia</label> <!-- selector padre -->
+                   
+                    <select name="provincia" id="Provincia"> 
+
+                        <optgroup>
+                        <option value="Caba">CABA</option>
+                        <option value="BsAs">Buenos Aires</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+                    <label for="genero">Genero</label>
+                    <div> <!-- encapsulamos los radio button sino el cliente lo ve desordenado -->
+                        <input type="radio" name="genero" value="femenino"> femenino
+                        <input type="radio" name="genero" value="masculino"> masculino
+                        <input type="radio" name="genero" value="otro"> otro
+                    </div>
+                    <br>
+                    <label for="aceptar">Acepto los terminos de envío</label>
+                    <input type="checkbox" name="aceptar" value="acepto" required>
+                    <br>
+                    <label for="comentarioo">Comentarios</label>  
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea> 
+                    <div>
+                        <input type="submit" value="Enviar datos" disabled> <!-- en type puede ir button. Ver de nuevo lo del submit que no lo entiendo-->
+                    </div>
+                    <div>
+                        <input type="reset" value="Borrar Formulario" > <!-- Boton por si el usuario desea borrar el formulario -->
+                    </div>
+                                                                                            
+        </form>
+    
+
+    </main>
+    <footer>
+        <address>
+            <p>
+                Mi direccion 203
+            </p>
+        </address>
+    </footer>
+    <script src="./js/inde.js"></script>    <!-- Buena practica para enlazar js: al final del body -->
+</body>
+</html>
+
+
+
+
+

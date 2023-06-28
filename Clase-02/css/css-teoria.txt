@@ -1,0 +1,44 @@
+Para dar estilo:
+
+1) Enlazar mi archivo html con mi css, desde el head o cabecera.
+2) atributo style en h1 por ej. (Poco practico cuando tengo que cambiar color y tengo muchas paginas/codigo) INLINE
+3) Desde el head: etiqueta style. Estilo embebido porque ya predetermino un color desde el head.
+4) diferencias entre class e id: las clases se reutilizan, el id no
+    Puede tener mas de una clase un elemento html. El id va uno solo Para
+    que java script traiga uno solo, sino se confunde. Un id tiene un solo
+    atributo
+5)Herencia.Cascada: por el efecto cascada, siempre es recomendable poner el color
+en una hoja de estilo externa(y no en el head)
+6) Precedencia de declaraciones:
+
+inline > id > class > etiquetas
+
+Si tengo las dos cosas a la vez y le doy dos reglas diferentes
+respetara el del id. Porque el id es unico, es mas especifico.
+
+
+
+MediasQuery: 
+
+
+Siempre cambia con los años. Fijarse las medidas estandar actualizadas en la pagina de 
+bootstrap y no en el cuadrito del material de estudio.
+
+Es mas fácil arrancar con mobile first o es indistinto?
+Matias Gimenez
+01:36:54
+Es recomendable evaluarlo dependiendo de la pagina. Es decir, una pagina de homebanking o de venta de inmuebles, alquileres. Es mas recomendable en esos ejemplos priorizar la vista desktop
+Pero en una pagina de red social, e commerce, lista de quehaceres, diarios informativos es mas recomendable priorizar la vista mobible
+Hay que tener en cuenta que desde 2016 la web se accede mas desde los celulares que desde el escritorio, por lo que si hay duda de que vista se deberia priorizar, es recomendable elegir la vista mobible
+Pero siempre hagan una investigación previa
+
+Tema insercion de imagenes: 
+
+si pongo una imagen muy grande(Ej: 1920x1080) en el mobile se va a ver mal. 
+Tendre que pedirle a la gente de diseño que la adecúe. Sino se pueden usar imagenes svg:
+se adecuan al dispositivo. En sitios como shuttershok puedo extraer imagenes.Son imagenes que trabajan con vectores.
+Tambien a las imagenes las podemos convertir de jpg a png que son mas livianas y a la hora de cargarlas sera mas rapido. Es recomendable entonces,
+usar imagenes svg.
+
+
+

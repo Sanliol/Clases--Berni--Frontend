@@ -1,0 +1,20 @@
+Grids
+
+
+display: grid;
+    grid-template-columns: 300px 250px 400px 100px;  /* le indico el tamaño de cada columna y cuantas. */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Fr=fraccion, cada columna ocupara una fraccion */
+    grid-template-columns: auto;/* acomoda automaticamente tomando el 100% del ancho del dispositivo. */
+    grid-template-rows: 100px 250px;
+
+Cuál es la mejor unidad o la que recomienden para trabajar?
+ Fr, px, %?
+Matias Gimenez
+50:58
+Depende del caso, para cosas mas grandes es 
+recomendable medidas relativas
+
+
+
+
+

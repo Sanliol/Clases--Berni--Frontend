@@ -1,0 +1,64 @@
+Framework= entorno de trabajo que me brinda mas herram. un poco mayores que flex y grid y las va integrando. Marco de trabajo estructurado, con sus caracteristicas propias, arquitectura.
+Libreria= la puedo agregar o no, instalar.Entorno de trabajo mucho mas pequeño que un framework. Puedo agregar dif librerias para realizar la misma tarea. Las elijo segun el manejo que tenga de cada una de ellas, segun la que quiera utilizar, segun la que me guste mas.(por ej: muchas librerias trabajan para crear formularios)
+Con el framwork necesito aprender a usarlo. (la libreria no)
+Angular es un framwork por ej.(Viene listo para trabajar con rutas), React en cambio no puedo enrutar, darle links, a no ser que instale el react ruterdom(libreria) 
+Libreria: elegir una gaseosa
+Framework: Comprar materia prima, procesarla, prepararla, cocinarla.
+
+BOOTSTRAP (Framework que tarbaja con html y css, otro   frame es     AstroBuild.com) COMPETENCIA DE BOOTSRAP https://bulma.io/
+
+-Entorno de trabajo preparado especificamente para desarrollo   Frontend (Angular es otro frame que trabaja con frontend)
+-Pie de apoyo: me ayuda a crear codigo mas rapido. Pero al no estar personalizado tenemos que ir "retocando"
+
+a)  Primera forma de utilizar Bootstrap
+Ventaja: mucho mas rapido y proyecto menos pesado. PERO:
+Desventaja: si se caen los servidores de bootstrap PERDEMOS nuestros estilos.
+-Codigo delivery: CDN: pasos:
+1)Enlazamos/linkeamos el css de BOOTSTRAP. (en mi html)
+2)Enlazamos/linkeamos el script de BOOTSTRAP.
+
+NOTA: DEBO ENLAZAR TANTO EL CDN DE CSS COMO JS A CADA PAGINA/HOJA WEB.
+
+3)Nos dirijimos a la pagina Nav dentro de la pagina principal Bootstrap.
+4)Alli encontraremos un menu a la izquierda, donde haremos scrull, hasta llegar a componentes(pequeña seccion/porcion de codigo ya escrito listo para exportar).
+5)Aca encontramos codigo ya escrito: nav, header, etc.(Entonces vemos/aprendemos como trabaja bootstrap, por ejemplo si en css utiliza clases o id, o si utilzia estilo en elemento) 
+
+
+
+b)    Segunda forma de utilizar bootstrap: DESCARGA
+pasos:
+1) Download source: Descargo el codigo fuente de bootstrap: lo deszipeo y pego la carpeta "bootstrap-5.3.0" en mi proyecto
+   SI quiero puedo descargar solo la carpeta dist(la de los estilos)
+2) Enlazamos nuestro html tanto al DIST CSS MIN, como al DIST JS BOOTSTRAP.BUNDLE.MIN de nuestra carpeta bootstrap(que ahora la tenemos en nuestro proyecto descargada, por lo tanto podemos personalizar, hacer retoques como queramos. Osea podemos modificar el bootstrap porque lo tenemos descargado)
+
+ IMPORTANTE: se trabaja con el min= minificado. Esto es porque esta todo comprimido, entonces el browser lo lee mas rapido. El dist es suficiente para no ocupar tanto espacio en el servidor.
+ Es decir, puedo descargar todo el bootstrap y despues eliminar los archivos y dejar el dist. o solamente descargar el dist.
+
+ Podemos trabajar con las clases ya preexistentes de bootsptrap, o personalizarlo con las nuestras creando un nuevo archivo css en nuestro proyecto.
+
+ Ventajas de la descarga: Mas seguro. si se caen los servidores de bootstrap no perdemos nuestros estilos.
+Conviene siempre descargarlo. Para probarlo conviene el CDN
+
+
+ Tecnologias: 
+ -Bootstrap
+ -Bulma (competencia bootstrap)
+ -Angular
+ -React
+ -JS
+ 
+ Paginas:
+
+ -https://www.websiteplanet.com/es/webtools/jscssminifier/    -------------->>>>> Para mimificar el codigo(compactarlo)
+
+
+
+ Footers:
+ -Los footers en Bootstrap NO se encuentran en components.--------> los encontramos en examples.
+ -Descargo examples, elijo footer, y click derecho------> ver codigo fuente real------> lo copio.
+ -En examples tambien encuentro buttons and much more.
+
+ Para trabajar de manera COLABORATIVA con VSC y GITHUB(2 formas)
+ -Live share:  el que crea el proyecto le da a live share desde VSC y se crea un link a compartir.(De manera colaborativa)
+ -En repo GITHUB:  Como compartir un repo de git y que los demas tambien puedan hacer push a mi repo (o al repo del grupo)?----------> Ir a "Settings"
+ -------> Collaborators------->Add people--------> Escribir nombre de perfil y llega invitacion.

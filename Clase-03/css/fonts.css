@@ -1,0 +1,76 @@
+/* Propiedades que manejan la tipografia dentro de nuestro dos html */
+
+/* Importamos una tipografia de google fonts con metodo: Importar:directo al css va */
+/* <style>   El style va si lo pusieramos en el html*/
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=The+Girl+Next+Door&display=swap');
+/* </style> */
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* me incluye el border box dentro del width */
+} 
+
+body{
+    font-size: 100%; /* el 100% por default sigue siendo 16px */
+}
+.p1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px; /* por default 16px */
+    /* display: none; */
+    font-style: normal;
+    
+}/* si el usuario no tiene Impact en su dispositivo, que use Haettenschweiler, si no tiene esta que use Arial */
+
+
+.p2{
+    /* display: inline; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    font-size: 1.5rem;
+    width: 300px;
+    font-style: italic; /* cursiva */
+    height: 300px;
+    border: 3px solid; /* Si no tengo normalizado el box sizing, tendre el 50px(width)+3px de borde.
+    Pero si esta seteado box sizing, ya incluye los 3px de borde en el 50%del with  */
+}
+
+.p3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', monospace;
+    font-size: 35px;
+    font-style: oblique; 
+}
+/* Asignamos la tipografia linkeada en el html */
+.p4{
+    font-family: 'Averia Libre', cursive;
+    font-size: 8vw; 
+    font-variant: small-caps; /* variante mas pequeña que 8vw */
+}
+/* Asignamos la tipografia importada al CSS desde google fonts */
+.p5{
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+/* Seteamos la tipografia con font-face y buscamos la fuente, el source(src), */
+@font-face{
+    font-family: miFuente;
+    src: url('../fonts/MartianMono-Regular.ttf');
+}
+/* Asignamos la fuente asignada al parrafo */
+.p6{    
+    font-family: miFuente;
+    font-size: 4vw;
+    font-weight: 900; /* ancho/grosor que va dede 100 hasta 900, y despues el bold*/
+}
+
+@font-face{
+    font-family: Oktubre;
+    src: url('../fonts/Oktober.ttf');
+}
+.p7{
+    font-family: Oktubre;
+    font-size: 4vw;
+    font-weight: bold; /* negrita */
+}

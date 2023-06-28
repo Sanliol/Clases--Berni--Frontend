@@ -1,0 +1,53 @@
+Pasos git
+
+1)git init                  (creacion de la "cajita")
+2)git add .          (voy seleccionando)     (Si primero no tengo un repositorio creado, git add . tira error)    
+                     (voy metiendo hojas, paginas, jueguetes a mi "cajita" pero todavia no esta embalada o "commiteada" o "lista para salir")
+3)git status          (opcional en tercer orden)
+On branch master
+
+No commits yet         (aca git te dice "No embalaste la cajita aun")
+Changes to be committed:               ("Realizaste los siguientes cambios para embalar")
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore             
+        new file:   Github_git.txt 
+        new file:   comandosGit.txt
+        new file:   css/index.css  
+        new file:   index.html
+        new file:   productos.html
+        new file:   sucursales.html
+        new file:   sucursalesdos.html
+        new file:   sucursalestres.html
+
+4)git commit -m "Inicio mi proyecto en el curso"          (cajita embalada)
+
+5) git remote add origin https://github.com/Sanliol/primerproyectoenpc.git         pego eso en la terminal.
+Esto le dice a git que le agrege un repositorio remoto en esa url. Es la direccion donde 
+tengo que enviar mi repositorio local (mi cajita embalada). Le estamos diciendo a git: 
+"Git cuando te pida que envies algo, envia a esta url que te indico cuando te lo indique.
+ Quiero que me lo envies alli"
+
+6)Como se yo que git sabe donde enviar mi cajita? 
+git remote -v                  ("git mostrame donde vas a enviar los datos" le digo con este comando)
+
+7)git push -u origin main (master si no lo cambio antes con un branch) 
+  git push -u origin master   (el -u es para controlar el usuario, para logearse). Si no quiero andar logeando todo el rato cada vez
+  que quiero subir algo a git, puedoS iniciar sesion en github desde mi ide o editor de codigo. Si estamos logeados en git no hace falta 
+  poner esa -u.
+
+
+  NOTAS_ git init lo hago una sola vez
+         git remote origin lo hago una sola vez(una sola vez le tengo que indicar a git la direccion donde se va a guardar mi proyecto)  
+
+ Como hago para seguir subiendo los cambios que vaya haciendo luego? Agregando (git add .) commiteando(git commit) y pusheando(git push).
+
+
+Otro comando:
+
+git log: historial de commits. para ver quien realiza los cambios, fecha y hora.
+git log --oneline : muestra solo los cambios de commits 
+
+
+
+
+

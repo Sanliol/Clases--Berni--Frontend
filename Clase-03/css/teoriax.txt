@@ -1,0 +1,54 @@
+Margin y padding
+El padding es el relleno de mi contenido. Todos los elementos de html tiene padding.
+en Dev tools, la parte de estilos de margin paddin, lo que aparece en celestito es mi contenido
+por ej. del h2 "Soy el h2" (esto es el contenido: lo celeste). El padding seria lo verdecito: el relleno
+del contenido.
+
+margin aparece en marron. El margin es la separacion de los elementos html.
+En marron clarito el border: que puede tener mas de un valor.
+Lo bueno de poner selector global y setear el margin y padding en 0 es que yo despues
+puedo personalizarlo a partir desde 0. Porque los elemntos html ya vienen con un padding y un margin predeterminados.
+
+
+Padding-top: Relleno interno del elemento en la parte de arriba.
+propiedad que agrega padding de parte superior.
+
+
+Unidade mas pequeña de pantalla: px (pixel).
+
+16px= 1 Rem
+
+vh: view height: altura/ medida segun el dispositivo del usuario.
+100%vw: view with: ancho equivale al 100porciento del dispositivo que esta mirando el usuario-
+Ocupa el 100% del dispositivo que esta usando el cliente
+
+Google Fonts: o las puedo descargar a mi compu. O las puedo importar al html.Cuando lo importa al html
+tengo dos opciones: Link e importar. La primera la tengo que poner en mi html, linkeandola. La segunda, 
+la tengo que importar a mi css. Luego pongo ya el font family con el estilo que elegi. Vuelvo a la pagina y copio el font
+family.
+
+vh y vw seria mas recomendable para las cajas?
+
+Matias Gimenez
+01:18:44
+exactamente y espaciados de margin y padding en contenedores grandes
+por ejemplo si queremos que en nuestro header haya un espacio a los costados de aprox el 5% del ancho de la pantalla podríamos usar un padding 3vh 5 vwA
+
+
+Paginas para descargar fuentes:
+-https://www.dafont.com/es/
+-https://fonts.google.com/
+
+Paginas para diseñar/estructurar pagina:
+-Figma
+-Invision
+-NinjaMock
+-Balsamik
+-JustInMind
+-Pop
+
+Paginas Paletas de colores:
+-AdobeColor
+-https://paletadecolores.com.ar/
+
+

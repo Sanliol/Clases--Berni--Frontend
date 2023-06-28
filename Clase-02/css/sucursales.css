@@ -1,0 +1,40 @@
+/* selector global para el html */
+
+*{ /* el * sifnifica: dale a todo el documento estas caracteristicas */
+    
+}
+
+/* selector de id */
+#parrafo{
+    color: red;
+}
+
+#unico{
+    color: violet;
+}
+
+/* selectores de clase */ 
+.segundo {
+    color: green;
+    background-color: gray;
+}
+.grande {
+    font-size: 35px;
+}
+
+/* Herencia: todo lo que este dentro del 
+contenedor div tomará color que le diga, excepto cuando especifique
+dentro de este a algun elemento */
+div{ 
+    background-color: rgb(143, 152, 247);
+}
+
+/* Cascada:
+ como el browser lee de arriba abajo, izq a derecha,
+primero leyo el rebeccapurple, pero siguio leyendo el codigo y
+se encontro con el black en la cabecera para el h2. */
+/* selector de etiqueta */
+h2{ 
+    color: rebeccapurple; 
+}
+
